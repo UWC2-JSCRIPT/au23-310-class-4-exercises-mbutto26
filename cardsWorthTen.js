@@ -11,17 +11,21 @@ const cards = [
   { val: 10, displayVal: "Jack", suit: "hearts" },
   { val: 10, displayVal: "Queen", suit: "hearts" },
   { val: 10, displayVal: "King", suit: "hearts" },
-  { val: 11, displayVal: "Ace", suit: "hearts" }
+  { val: 11, displayVal: "Ace", suit: "hearts" },
 ];
 
 /**
  * Takes an array of cards and returns a string of the card display
  * values where the value is equal to 10
- *
  * @param {array} cards
  * @return {string} displayVal
  */
-const cardsWorthTen = cards => {};
+
+for (let i = 0; i < cards.length; i++) {
+  console.log(cards[i]);
+}
+
+const cardsWorthTen = (cards) => {};
 
 console.log(cardsWorthTen(cards));
 // should return/log "10, Jack, Queen, King"
