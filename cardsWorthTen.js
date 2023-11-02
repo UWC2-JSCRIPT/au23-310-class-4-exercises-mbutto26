@@ -22,7 +22,9 @@ const cards = [
  */
 
 for (let i = 0; i < cards.length; i++) {
-  console.log(cards[i]);
+  if (cards[i] === 10) {
+    continue;
+  }
 }
 
 const cardsWorthTen = (cards) => {};

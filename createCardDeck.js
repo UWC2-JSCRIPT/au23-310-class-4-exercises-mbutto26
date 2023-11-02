@@ -48,12 +48,12 @@ const getDeck = () => {
 };
 
 // CHECKS
-const deck = getDeck();
+const deck = getDeck1();
 console.log(`Deck length equals 52? ${deck.length === 52}`);
 
-const randomCard = deck[Math.floor(Math.random() * 52)];
+const aRandomCard = deck(Math.floor(Math.random() * 52));
 
-const cardHasVal =
+const cardHasVals =
   randomCard && randomCard.val && typeof randomCard.val === "number";
 console.log(`Random card has val? ${cardHasVal}`);
 
