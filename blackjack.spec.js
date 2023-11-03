@@ -1,10 +1,12 @@
+const blackjackDeck = getDeck();
+
 class cardPlayer {
   constructor(name) {
     this.name = name;
   }
 }
-const player1 = new cardPlayer(`player1`);
-const player2 = new cardPlayer(`dealer`);
+const player = new cardPlayer(`player`);
+const dealer = new cardPlayer(`dealer`);
 
-console.log(player1);
-console.log(player2);
+console.log(player);
+console.log(dealer);

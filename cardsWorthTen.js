@@ -21,9 +21,11 @@ const cards = [
  * @return {string} displayVal
  */
 
-for (let i = 0; i < cards.length; i++) {
-  if (cards[i] === 10) {
-    continue;
+function cardsWorthTens(cards) {
+  for (let i = 0; i < cards.length; i++) {
+    if (cards[i] === 10) {
+      continue;
+    }
   }
 }
 
