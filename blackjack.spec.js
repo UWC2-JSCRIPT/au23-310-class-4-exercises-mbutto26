@@ -60,3 +60,5 @@ const determineWinner = (playerScore, dealerScore) => {
   }
 };
 console.log(determineWinner);
+
+function calcPoints() {}
