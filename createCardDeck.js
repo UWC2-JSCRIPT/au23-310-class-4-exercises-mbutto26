@@ -15,7 +15,7 @@ const getDeck = () => {
       const displayVal = "";
 
       switch (j) {
-        case j === 1:
+        case j === 1 || j === 11:
           displayVal = "Ace";
           break;
         case j > 1 && j <= 10:
@@ -48,7 +48,7 @@ const getDeck = () => {
 };
 
 // CHECKS
-const deck = getDeck1();
+const deck = getDeck();
 console.log(`Deck length equals 52? ${deck.length === 52}`);
 
 const aRandomCard = deck(Math.floor(Math.random() * 52));
