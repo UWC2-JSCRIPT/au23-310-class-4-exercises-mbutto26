@@ -25,3 +25,5 @@ console.log(foodIsCooked("chicken", 190)); // should be true
 console.log(foodIsCooked("beef", 138, "well")); // should be false
 console.log(foodIsCooked("beef", 138, "medium")); // should be true
 console.log(foodIsCooked("beef", 138, "rare")); // should be true
+
+
