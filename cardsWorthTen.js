@@ -21,15 +21,11 @@ const cards = [
  * @return {string} displayVal
  */
 
-function cardsWorthTens(cards) {
-  for (let i = 0; i < cards.length; i++) {
-    if (cards[i] === 10) {
-      continue;
-    }
-  }
+function cardsWorthTen(cards) {
+  const cardArray = cards.filter((card) => card.val === 10);
+  const cardArrayDisplay = cardArray.map((card) => card.displayVal);
+  return cardArrayDisplay.join(", ");
 }
-
-const cardsWorthTen = (cards) => {};
 
 console.log(cardsWorthTen(cards));
 // should return/log "10, Jack, Queen, King"
