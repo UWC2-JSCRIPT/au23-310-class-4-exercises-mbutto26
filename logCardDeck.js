@@ -60,7 +60,10 @@ const cards = [
  */
 
 const logCardDeck = (deck) => {
-  for (let i = 0; i < cards.length; i++) {
-    console.log(cards[i]);
-  }
+  deck.forEach((card) => {
+    Object.keys(card).forEach((key) => {
+      console.log(`${key}: ${card[key]}`);
+    });
+  });
 };
+console.log(logCardDeck(cards));
